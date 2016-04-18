@@ -1,0 +1,12 @@
+language: ruby
+cache: bundler
+rvm:
+- 2.3.0
+script: "./_bin/deploy"
+branches:
+  only:
+    - master
+env:
+  global:
+    - GITHUB_REPO_SLUG=theyworkforyou/togo-pmo
+    - secure: "d7xeCFkD6hMa00AjTG6pLEzj7firyVSa24FZqONMN2OWfC17iPybNtQQEhIrrKUAbH/7S4NyKyYf77duUCPzlDT9fc23EvZstgp+92jWfFFkOBFM4EG4vUlSWlDAxj7gzEUpXZZa9jHrg0bgC80buyblt40jP7oLd5XoUzNGZ1xssiGaWprTcftB7iNtKUE/NEsWxflwFwMH3/wVRUR6Jr5RVt2GRxZPpn162gJ+S/7nZDJs/9gOLBq8ayc2NqIDp71kVsJb4+4GXkn/5u5Zlf09s/Sd/cWsy90RPTx5HOlDjkJWoA5bOhgEqx2cG3cW+lYE2hCNsXtEMN7Jj3NqwKDQt+iXUO1Ugw3blhfSC2Q6+burYeEZZEemALuXdtuYY/w3p9cQ1HI0F9fgQjIo2hhi+MNK3NH1eNJsaeCzlbSwjLQVghGp3MUCyc8GHFsISkkgz6W3ntHUZCyNvAhuor6ldlIr9cjET169KSpSbClWYpKONxJXOBG3ansQ2pIlDa5xIypJUJQS+DT0crcf+onSXYUYrqHlBAiTmUD1REA90T/KA/xtsZgUIUI+6OOvBlA4+F/6ncL8TnBWOooe5qmVMoggQYCkRa53EdjJwZrYJqI9r/vksD5tCoQ8QdOnuvj9g+NjJap7b+KVByV60DfgaPGxOLIyAhu6Y0BqRTw="
