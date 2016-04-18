@@ -17,3 +17,19 @@ exclude: [Gemfile, Gemfile.lock, README.md, vendor]
 
 # Build settings
 markdown: kramdown
+
+# EveryPolitician data configuration:
+everypolitician:
+ sources:
+   - 'https://cdn.rawgit.com/everypolitician/everypolitician-data/c6e0e76/data/Togo/Assembly/ep-popolo-v1.0.json'
+
+collections:
+ people:
+  output: true
+  permalink: '/mps/:path/'
+ events:
+  output: true
+  permalink: '/terms/:path/'
+ areas:
+  output: true
+  permalink: '/constituency/:path/'
