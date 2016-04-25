@@ -10,7 +10,7 @@ title: Togo Parliamentary Monitoring
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Find information about politicians in Togo
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/togo-pmo" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: ''
 exclude: [Gemfile, Gemfile.lock, README.md, vendor]

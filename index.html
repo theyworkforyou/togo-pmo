@@ -11,7 +11,7 @@ title: Home
 
   <div>
     {% for constituency in site.areas %}
-      <p>Area: <a href="{{ constituency.url }}">{{ constituency.name }}</a></p>
+      <p>Area: <a href="{{ constituency.url | prepend: site.baseurl }}">{{ constituency.name }}</a></p>
     {% endfor %}
   </div>
 
@@ -19,7 +19,7 @@ title: Home
 
   <div>
     {% for person in site.people %}
-      <p>MP: <a href="{{ person.url }}">{{ person.name }}</a></p>
+      <p>MP: <a href="{{ person.url | prepend: site.baseurl }}">{{ person.name }}</a></p>
     {% endfor %}
   </div>
 
