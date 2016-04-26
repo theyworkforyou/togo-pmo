@@ -1,0 +1,18 @@
+---
+layout: default
+title: All Politicians
+---
+
+<div class="home">
+
+  <h1 class="page-heading">All Politicians</h1>
+
+  <h3>People</h3>
+
+  <ul>
+    {% for person in site.people %}
+      <li><a href="{{ person.url }}">{{ person.name }}</a></li>
+    {% endfor %}
+  </ul>
+
+</div>
