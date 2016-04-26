@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/theyworkforyou/jekyll-search.git
+  revision: 3e8108d5c097d1b6bc9afcf797a84a330221c7b3
+  branch: master
+  specs:
+    jekyll-search (0.1.0)
+      jekyll (>= 3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -37,6 +45,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.1)
   jekyll-everypolitician
+  jekyll-search!
 
 BUNDLED WITH
    1.11.2

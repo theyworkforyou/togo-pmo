@@ -33,3 +33,7 @@ collections:
  areas:
   output: true
   permalink: '/constituency/:path/'
+
+collections_to_search:
+  - people
+  - areas

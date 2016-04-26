@@ -5,22 +5,6 @@ title: Home
 
 <div class="home">
 
-  <h1 class="page-heading">{{ site.title }}</h1>
-
-  <h3>Areas</h2>
-
-  <div>
-    {% for constituency in site.areas %}
-      <p>Area: <a href="{{ constituency.url | prepend: site.baseurl }}">{{ constituency.name }}</a></p>
-    {% endfor %}
-  </div>
-
-  <h2>People</h2>
-
-  <div>
-    {% for person in site.people %}
-      <p>MP: <a href="{{ person.url | prepend: site.baseurl }}">{{ person.name }}</a></p>
-    {% endfor %}
-  </div>
+  {% jekyll_search_box %}
 
 </div>
