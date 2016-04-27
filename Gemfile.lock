@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/theyworkforyou/jekyll-search.git
-  revision: 3e8108d5c097d1b6bc9afcf797a84a330221c7b3
-  branch: master
+  revision: bad20e2e63f04cdfe80933e2b6b0951befd82a2a
+  branch: handle-baseurl
   specs:
     jekyll-search (0.1.0)
       jekyll (>= 3)
