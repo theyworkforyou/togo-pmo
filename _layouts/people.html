@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+{% assign person = page %}
+
+<h1>{{ person.name }}</h1>
+
+<div class="other-names">
+  <h3>Other Names</h3>
+  {% if person.other_names != '' %}
+    <dl>
+      {% for other_name in person.other_names %}
+        <dt>Also known as:</dt>
+        <dd>{{ other_name.name }}
+          {% if other_name.lang %}
+            (in the language {{ other_name.lang }})
+          {% endif %}
+        </dd>
+      {% endfor %}
+    </dl>
+  {% endif %}
+</div>
+
+<div class="person-properties">
+  <h3>Information</h3>
+  <dl>
+    {% if person.gender %}
+      <dt>Gender:</dt>
+      <dd>{{ person.gender }}</dd>
+    {% endif %}
+    {% if person.email %}
+      <dt>Email:</dt>
+      <dd>{{ person.email }}</dd>
+    {% endif %}
+    {% for link in person.links %}
+      <dt>{{ link.note }}:</dt>
+      <dd><a href="{{ link.url }}">{{ person.name }}</a></dd>
+    {% endfor %}
+  </dl>
+</dd>
