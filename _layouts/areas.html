@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% assign area = page %}
+
+<h1>Area: {{ area.name }}</h1>
+
+<p class="area-intro">The current representatives for {{ area.name }} are:</p>
+
+<ul class="area-person-list">
+  {% for membership in area.memberships %}
+    <li><a href="{{ membership.person.url | prepend: site.baseurl }}">{{ membership.person.name }}</a>
+      {% if membership.start_date %}
+        From {{ membership.start_date }}
+      {% endif %}
+      {% if membership.start_date or membership.end_date %}
+        to
+      {% endif %}
+      {% if membership.end_date %}
+        Until {{ membership.end_date }}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
