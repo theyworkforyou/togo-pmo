@@ -39,7 +39,18 @@ header {
 }
 
 footer {
+  clear: both;
   margin-top: 2em;
   border-top: 1px solid #ccc;
   padding-top: 1em;
+}
+
+.search-label {
+  float: left;
+  margin: 1em;
+}
+
+.jekyll-search {
+  margin-top: 1em;
+  float: left;
 }
