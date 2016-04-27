@@ -11,7 +11,7 @@ title: All Politicians
 
   <ul>
     {% for person in site.people %}
-      <li><a href="{{ person.url }}">{{ person.name }}</a></li>
+      <li><a href="{{ person.url | prepend: site.baseurl }}">{{ person.name }}</a></li>
     {% endfor %}
   </ul>
 

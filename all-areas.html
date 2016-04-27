@@ -11,7 +11,7 @@ title: All Politicians
 
   <ul>
     {% for constituency in site.areas %}
-      <li><a href="{{ constituency.url }}">{{ constituency.name }}</a></li>
+      <li><a href="{{ constituency.url | prepend: site.baseurl }}">{{ constituency.name }}</a></li>
     {% endfor %}
   </ul>
 
